@@ -4,7 +4,7 @@ import requests
 from datetime import datetime
 import os
 
-MISTRAL_API_KEY = "SqUX4Q0EbojcQRdA3iHo5rhn2lQIsjRl"
+MISTRAL_API_KEY = os.getenv("MISTRAL_API_KEY", "")
 MISTRAL_API_URL = "https://api.mistral.ai/v1/chat/completions"
 LOG_FILE = "sample_log.json"
 GRAPH_STORE = "stored_graphs.json"
